@@ -1,6 +1,6 @@
 <?php
 
-include "GetVideoInfo.php";
+include "./scripts/GetVideoInfo.php";
 
 $isvalid="";
 $isVideoIdValid="";
