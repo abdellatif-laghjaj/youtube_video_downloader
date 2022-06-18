@@ -304,13 +304,15 @@
     flex-direction: row;
     justify-content: center;
     left: 50%;
-    transform: translateX(-50%);
     bottom: 0;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     width: 400px;
-    height: 50px;
     margin-bottom: 16px;
+    text-align: center;
+    /*to remove*/
+    top: auto;
+    transform: translateX(-50%);
   }
 
   .color-palette .theme-color {
