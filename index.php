@@ -44,6 +44,9 @@ if (isset($_POST['submit'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="res/favicon.png" type="image/x-icon">
     <title>Youtube Video Downloader</title>
 </head>
 <body>
