@@ -1,7 +1,6 @@
 <?php
 
 include "./scripts/GetVideoInfo.php";
-
 $isvalid = "";
 $isVideoIdValid = "";
 
@@ -101,7 +100,7 @@ if (isset($_POST['submit'])) {
         <div class="video_detail_box">
           <div class="thumbnail_box">
             <img src="<?php echo $thumbnail; ?>" alt="thumbnail">
-            <a href="download_img.php?url=<?php echo $thumbnail; ?>&name=<?php echo $title; ?>" id="img_download_btn"><i class='bx bxs-download'></i></a>
+            <a href="./scripts/download_img.php?url=<?php echo $thumbnail; ?>&name=<?php echo $title; ?>" id="img_download_btn"><i class='bx bxs-download'></i></a>
             <a href="<?php echo $video_link; ?>" target="_blank" id="original_video_link_btn"><i class='bx bxl-youtube'></i></a>
           </div>
 
@@ -151,8 +150,8 @@ if (isset($_POST['submit'])) {
                       <td><?php if ($format->mimeType) echo explode(";", explode("/", $format->mimeType)[1])[0];
                           else echo "Unknown"; ?>
                       </td>
-                      <td><a href="download_video.php?link=<?php echo urlencode($url) ?>&title=<?php echo urlencode($title) ?>&type=<?php if ($format->mimeType) echo explode(";", explode("/", $format->mimeType)[1])[0];
-                                                                                                                                    else echo "mp4"; ?>" id="download_btn"><i class='bx bxs-download'></i>&nbsp;Download</a></td>
+                      <td><a href="./scripts/download_video.php?link=<?php echo urlencode($url) ?>&title=<?php echo urlencode($title) ?>&type=<?php if ($format->mimeType) echo explode(";", explode("/", $format->mimeType)[1])[0];
+                                                                                                                                              else echo "mp4"; ?>" id="download_btn"><i class='bx bxs-download'></i>&nbsp;Download</a></td>
                     </tr>
 
                   <?php } ?>
@@ -165,20 +164,16 @@ if (isset($_POST['submit'])) {
     <?php }
           }
         } else { ?>
-
     <div class="instruction_box">
       <label><i class='bx bx-video-off'></i></label>
       <h3>Unable to fetch video info.</h3>
       <p>make sure url is valid.</p>
     </div>
-
   <?php } ?>
-
     </div>
-
   </div>
-
-
+  <!--=========== JS ===========-->
+  <script src="js/color_palette.js"></script>
 </body>
 
 </html>

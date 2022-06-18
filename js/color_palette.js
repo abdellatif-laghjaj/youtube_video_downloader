@@ -1,8 +1,6 @@
 //get the theme from local storage
 getTheme();
 
-//change color theme
-
 //color palette
 const colors = [
   "hsl(345, 80%, 50%)",
