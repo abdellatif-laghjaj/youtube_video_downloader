@@ -53,6 +53,27 @@ if (isset($_POST['submit'])) {
 
 <body>
 
+  <!-- dark mode toggle -->
+  <div class="dark-mode">
+    <span class="dark-mode-btn">
+      <i class="bx bx-moon"></i>
+    </span>
+  </div>
+
+  <!--=========== COLOR PICKER ===========-->
+
+  <div class="color-palette">
+    <span class="theme-color"></span>
+    <span class="theme-color"></span>
+    <span class="theme-color"></span>
+    <span class="theme-color"></span>
+    <span class="theme-color"></span>
+    <span class="theme-color"></span>
+    <span class="theme-color"></span>
+    <span class="theme-color"></span>
+    <span class="theme-color"></span>
+  </div>
+
   <div class="downloader">
 
     <div class="main">
@@ -131,7 +152,7 @@ if (isset($_POST['submit'])) {
                           else echo "Unknown"; ?>
                       </td>
                       <td><a href="download_video.php?link=<?php echo urlencode($url) ?>&title=<?php echo urlencode($title) ?>&type=<?php if ($format->mimeType) echo explode(";", explode("/", $format->mimeType)[1])[0];
-                                                                                                                                  else echo "mp4"; ?>" id="download_btn"><i class='bx bxs-download'></i>&nbsp;Download</a></td>
+                                                                                                                                    else echo "mp4"; ?>" id="download_btn"><i class='bx bxs-download'></i>&nbsp;Download</a></td>
                     </tr>
 
                   <?php } ?>

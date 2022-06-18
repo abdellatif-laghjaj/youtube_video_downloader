@@ -30,7 +30,7 @@
 }
 
 .main {
-  width: 400px;
+  width: 542px;
   display: flex;
   flex-direction: column;
   padding: 15px;
@@ -214,6 +214,58 @@
   font-size: 1.2em;
 }
 
+/* COLOR PALETTE */
+
+.color-palette {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 12px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 30px;
+  padding: 8px;
+  text-align: center;
+}
+
+.color-palette .theme-color {
+  background-color: red;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.color-palette .theme-color:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* drak mode palette */
+
+.dark-mode {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 50%;
+  padding: 8px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.dark-mode span {
+  font-size: 20px;
+  cursor: pointer;
+}
+
 @media (max-width: 800px) {
   .main {
     width: 70%;
@@ -227,12 +279,11 @@
 }
 
 @media (max-width: 400px) {
-  .text_info table tbody tr th{
+  .text_info table tbody tr th {
     font-size: 14px;
   }
 
   #download_btn {
     font-size: 8px;
-    
   }
 }
