@@ -30,7 +30,7 @@
 }
 
 .main {
-  width: 50%;
+  width: 400px;
   display: flex;
   flex-direction: column;
   padding: 15px;
@@ -223,5 +223,11 @@
 @media (max-width: 500px) {
   .main {
     width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .main {
+    width: 90%;
   }
 }
