@@ -9,7 +9,6 @@
 
 :root {
   --primary-color: #4193f0;
-  --secondary-color: #577df8;
   --text-color-dark: #333;
   --text-color-light: #fff;
   --light-grey: #f5f5f5;
@@ -22,11 +21,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(
-    to right,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background-color: var(--primary-color);
 }
 
 .main {
