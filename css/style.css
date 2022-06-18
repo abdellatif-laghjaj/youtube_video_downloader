@@ -227,7 +227,12 @@
 }
 
 @media (max-width: 400px) {
-  .main {
-    width: 90%;
+  .text_info table tbody tr th{
+    font-size: 14px;
+  }
+
+  #download_btn {
+    font-size: 8px;
+    
   }
 }
