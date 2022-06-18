@@ -30,7 +30,7 @@
 }
 
 .main {
-  width: 542px;
+  width: 426px;
   display: flex;
   flex-direction: column;
   padding: 15px;
@@ -232,6 +232,9 @@
   border-radius: 30px;
   padding: 8px;
   text-align: center;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .color-palette .theme-color {
