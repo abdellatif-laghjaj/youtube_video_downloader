@@ -35,7 +35,7 @@
   flex-direction: column;
   padding: 15px;
   border-radius: 5px;
-  /* background: #fff;
+  /* background: var(--text-color-light);
     box-shadow: 0.1px 4px 8px 2px rgba(0, 0, 0, 0.05); */
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -92,7 +92,7 @@
   position: absolute;
   right: 10px;
   bottom: 10px;
-  color: #fff;
+  color: var(--text-color-light);
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -107,7 +107,7 @@
   position: absolute;
   right: 55px;
   bottom: 10px;
-  color: #fff;
+  color: var(--text-color-light);
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -153,7 +153,7 @@
 
 .additional_info a {
   padding: 5px 10px 5px 10px;
-  color: #fff;
+  color: var(--text-color-light);
   font-size: 13px;
   border-radius: 5px;
   text-decoration: none;
@@ -170,7 +170,7 @@
 }
 
 #download_btn {
-  color: #fff;
+  color: var(--text-color-light);
   text-decoration: none;
   background: var(--primary-color);
   padding-left: 10px;
@@ -210,7 +210,7 @@
 }
 
 .instruction_box label i {
-  color: #fff;
+  color: var(--text-color-light);
   font-size: 1.2em;
 }
 
